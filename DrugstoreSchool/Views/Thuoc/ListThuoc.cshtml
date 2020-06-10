@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "ListThuoc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ListThuoc</h2>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>ListBook</title>
+    </head>
+    <body>
+        <div>
+            <ul>
+                @{ 
+                    int i = 1;
+                }
+                @foreach(var item in ViewBag.Thuocs)
+                {
+                    <li>
+                        @i - <b>@item</b>
+                        
+                    </li>i++;
+                }
+            </ul>
+        </div>
+    </body>
+</html>
+
